@@ -15446,77 +15446,6 @@ NS Package M08A</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="audioconn">
-<packages>
-<package name="JW-PJ-307-X">
-<pad name="P$1" x="3" y="2.5" drill="0.7" diameter="1.4224" shape="long"/>
-<rectangle x1="2.25" y1="2.1" x2="3.75" y2="2.9" layer="46"/>
-<pad name="P$2" x="3" y="5" drill="0.7" diameter="1.4224" shape="long"/>
-<rectangle x1="2.25" y1="4.6" x2="3.75" y2="5.4" layer="46"/>
-<pad name="P$3" x="3" y="-2.5" drill="0.7" diameter="1.4224" shape="long"/>
-<rectangle x1="2.25" y1="-2.9" x2="3.75" y2="-2.1" layer="46"/>
-<pad name="P$4" x="3" y="-5" drill="0.7" diameter="1.4224" shape="long"/>
-<rectangle x1="2.25" y1="-5.4" x2="3.75" y2="-4.6" layer="46"/>
-<hole x="-4.5" y="5" drill="1.2"/>
-<hole x="-2" y="5" drill="1.2"/>
-<hole x="3" y="0" drill="1.2"/>
-<hole x="-4.5" y="-5" drill="1.2"/>
-<hole x="-2" y="-5" drill="1.2"/>
-<pad name="P$5" x="-2" y="0.5" drill="0.7" diameter="1.4224" shape="long" rot="R90"/>
-<rectangle x1="-2.75" y1="0.1" x2="-1.25" y2="0.9" layer="46" rot="R90"/>
-<wire x1="-5.5" y1="6" x2="-5.5" y2="-6" width="0.127" layer="21"/>
-<wire x1="-5.5" y1="-6" x2="5.5" y2="-6" width="0.127" layer="21"/>
-<wire x1="5.5" y1="-6" x2="5.5" y2="6" width="0.127" layer="21"/>
-<wire x1="5.5" y1="6" x2="-5.5" y2="6" width="0.127" layer="21"/>
-<text x="6.5" y="0.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="6.5" y="-1.5" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="JW-PJ-307-3">
-<pin name="1" x="7.62" y="5.08" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="4" x="7.62" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="5" x="7.62" y="-5.08" visible="off" length="short" direction="pas" rot="R180"/>
-<wire x1="-5.588" y1="2.54" x2="-5.588" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-5.588" y1="-5.08" x2="-4.572" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-4.572" y1="-5.08" x2="-4.572" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-4.572" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-5.588" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="0" y1="-5.08" x2="-0.508" y2="-4.318" width="0.1524" layer="94"/>
-<wire x1="-0.508" y1="-4.318" x2="-1.016" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
-<text x="5.588" y="-4.572" size="1.27" layer="97">5</text>
-<text x="5.588" y="-2.032" size="1.27" layer="97">4</text>
-<text x="5.588" y="5.588" size="1.27" layer="97">1</text>
-<text x="-2.54" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="JW-PJ-307-3" prefix="J">
-<gates>
-<gate name="G$1" symbol="JW-PJ-307-3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="JW-PJ-307-X">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-<connect gate="G$1" pin="5" pad="P$5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="pinhead">
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -15992,6 +15921,88 @@ Source: tuxgr_12x2_r2.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="audioconn">
+<packages>
+<package name="JW-PJ-307-X">
+<pad name="P$1" x="3" y="2.5" drill="0.7" diameter="1.4224" shape="long"/>
+<rectangle x1="2.25" y1="2.1" x2="3.75" y2="2.9" layer="46"/>
+<pad name="P$2" x="3" y="5" drill="0.7" diameter="1.4224" shape="long"/>
+<rectangle x1="2.25" y1="4.6" x2="3.75" y2="5.4" layer="46"/>
+<pad name="P$3" x="3" y="-2.5" drill="0.7" diameter="1.4224" shape="long"/>
+<rectangle x1="2.25" y1="-2.9" x2="3.75" y2="-2.1" layer="46"/>
+<pad name="P$4" x="3" y="-5" drill="0.7" diameter="1.4224" shape="long"/>
+<rectangle x1="2.25" y1="-5.4" x2="3.75" y2="-4.6" layer="46"/>
+<hole x="-4.5" y="5" drill="1.2"/>
+<hole x="-2" y="5" drill="1.2"/>
+<hole x="3" y="0" drill="1.2"/>
+<hole x="-4.5" y="-5" drill="1.2"/>
+<hole x="-2" y="-5" drill="1.2"/>
+<pad name="P$5" x="-2" y="0.5" drill="0.7" diameter="1.4224" shape="long" rot="R90"/>
+<rectangle x1="-2.75" y1="0.1" x2="-1.25" y2="0.9" layer="46" rot="R90"/>
+<wire x1="-5.5" y1="6" x2="-5.5" y2="-6" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="-6" x2="5.5" y2="-6" width="0.127" layer="21"/>
+<wire x1="5.5" y1="-6" x2="5.5" y2="6" width="0.127" layer="21"/>
+<wire x1="5.5" y1="6" x2="-5.5" y2="6" width="0.127" layer="21"/>
+<text x="6.5" y="0.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="6.5" y="-1.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="JW-PJ-307-5">
+<pin name="1" x="7.62" y="5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="4" x="7.62" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="5" x="7.62" y="-5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-5.588" y1="2.54" x2="-5.588" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.588" y1="-5.08" x2="-4.572" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-4.572" y1="-5.08" x2="-4.572" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-4.572" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.588" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="-5.08" x2="-0.508" y2="-4.318" width="0.1524" layer="94"/>
+<wire x1="-0.508" y1="-4.318" x2="-1.016" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<text x="5.588" y="-4.572" size="1.27" layer="97">5</text>
+<text x="5.588" y="-2.032" size="1.27" layer="97">4</text>
+<text x="5.588" y="5.588" size="1.27" layer="97">1</text>
+<text x="-2.54" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="7.62" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="5.588" y="3.048" size="1.27" layer="97">2</text>
+<text x="5.588" y="0.508" size="1.27" layer="97">3</text>
+<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="-1.524" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="2.54" x2="-2.032" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="1.778" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JW-PJ-307-5" prefix="J">
+<gates>
+<gate name="G$1" symbol="JW-PJ-307-5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JW-PJ-307-X">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16076,8 +16087,6 @@ Source: tuxgr_12x2_r2.pdf</description>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
-<part name="J2" library="audioconn" deviceset="JW-PJ-307-3" device=""/>
-<part name="J3" library="audioconn" deviceset="JW-PJ-307-3" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
@@ -16125,6 +16134,19 @@ Source: tuxgr_12x2_r2.pdf</description>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
 <part name="C23" library="rcl" deviceset="CPOL-EU" device="CT7343"/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
+<part name="J2" library="audioconn" deviceset="JW-PJ-307-5" device=""/>
+<part name="J3" library="audioconn" deviceset="JW-PJ-307-5" device=""/>
+<part name="GND36" library="supply1" deviceset="GND" device=""/>
+<part name="GND37" library="supply1" deviceset="GND" device=""/>
+<part name="C24" library="rcl" deviceset="CPOL-EU" device="CT7343"/>
+<part name="R26" library="rcl" deviceset="R-EU_" device="M1206" value="470"/>
+<part name="R27" library="rcl" deviceset="R-EU_" device="M1206" value="10k"/>
+<part name="R28" library="rcl" deviceset="R-EU_" device="M1206" value="10k"/>
+<part name="GND38" library="supply1" deviceset="GND" device=""/>
+<part name="R29" library="rcl" deviceset="R-EU_" device="M1206" value="10k"/>
+<part name="C25" library="rcl" deviceset="C-EU" device="C1206K" value="10n"/>
+<part name="GND39" library="supply1" deviceset="GND" device=""/>
+<part name="C26" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -16138,21 +16160,19 @@ Source: tuxgr_12x2_r2.pdf</description>
 <instance part="+3V1" gate="G$1" x="-10.16" y="71.12"/>
 <instance part="P+2" gate="VCC" x="10.16" y="86.36"/>
 <instance part="C2" gate="G$1" x="71.12" y="104.14"/>
-<instance part="X1" gate="G$1" x="548.64" y="-33.02"/>
+<instance part="X1" gate="G$1" x="160.02" y="58.42"/>
 <instance part="X3" gate="G$1" x="43.18" y="63.5" rot="R90"/>
 <instance part="GND8" gate="1" x="71.12" y="93.98"/>
 <instance part="P+5" gate="1" x="71.12" y="111.76"/>
 <instance part="P+8" gate="1" x="33.02" y="83.82"/>
 <instance part="GND10" gate="1" x="43.18" y="76.2"/>
 <instance part="C6" gate="G$1" x="76.2" y="104.14"/>
-<instance part="J2" gate="G$1" x="193.04" y="78.74"/>
-<instance part="J3" gate="G$1" x="193.04" y="53.34"/>
-<instance part="JP1" gate="A" x="568.96" y="-30.48"/>
-<instance part="JP2" gate="A" x="612.14" y="-30.48" rot="MR0"/>
-<instance part="GND20" gate="1" x="622.3" y="-38.1"/>
-<instance part="P+11" gate="1" x="622.3" y="-15.24"/>
-<instance part="GND21" gate="1" x="556.26" y="-27.94"/>
-<instance part="GND22" gate="1" x="553.72" y="-43.18"/>
+<instance part="JP1" gate="A" x="180.34" y="60.96"/>
+<instance part="JP2" gate="A" x="223.52" y="60.96" rot="MR0"/>
+<instance part="GND20" gate="1" x="233.68" y="53.34"/>
+<instance part="P+11" gate="1" x="233.68" y="76.2"/>
+<instance part="GND21" gate="1" x="167.64" y="63.5"/>
+<instance part="GND22" gate="1" x="165.1" y="48.26"/>
 <instance part="R22" gate="G$1" x="129.54" y="63.5" rot="R90"/>
 </instances>
 <busses>
@@ -16184,25 +16204,25 @@ Source: tuxgr_12x2_r2.pdf</description>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="4"/>
-<wire x1="614.68" y1="-33.02" x2="622.3" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="622.3" y1="-33.02" x2="622.3" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="58.42" x2="233.68" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="58.42" x2="233.68" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
-<wire x1="566.42" y1="-27.94" x2="561.34" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="63.5" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="1"/>
-<wire x1="566.42" y1="-25.4" x2="561.34" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="561.34" y1="-27.94" x2="561.34" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="561.34" y1="-25.4" x2="556.26" y2="-25.4" width="0.1524" layer="91"/>
-<junction x="561.34" y="-25.4"/>
+<wire x1="177.8" y1="66.04" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="63.5" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="66.04" x2="167.64" y2="66.04" width="0.1524" layer="91"/>
+<junction x="172.72" y="66.04"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="551.18" y1="-35.56" x2="553.72" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="55.88" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="553.72" y1="-35.56" x2="553.72" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="55.88" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -16277,34 +16297,34 @@ Source: tuxgr_12x2_r2.pdf</description>
 <net name="TX" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="2"/>
-<wire x1="614.68" y1="-27.94" x2="627.38" y2="-27.94" width="0.1524" layer="91"/>
-<label x="627.38" y="-27.94" size="0.8128" layer="95" xref="yes"/>
+<wire x1="226.06" y1="63.5" x2="238.76" y2="63.5" width="0.1524" layer="91"/>
+<label x="238.76" y="63.5" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RD" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="3"/>
-<wire x1="614.68" y1="-30.48" x2="627.38" y2="-30.48" width="0.1524" layer="91"/>
-<label x="627.38" y="-30.48" size="0.8128" layer="95" xref="yes"/>
+<wire x1="226.06" y1="60.96" x2="238.76" y2="60.96" width="0.1524" layer="91"/>
+<label x="238.76" y="60.96" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
-<wire x1="566.42" y1="-33.02" x2="561.34" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="58.42" x2="172.72" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="3"/>
-<wire x1="566.42" y1="-30.48" x2="561.34" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="561.34" y1="-33.02" x2="561.34" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="561.34" y="-33.02"/>
-<wire x1="561.34" y1="-33.02" x2="551.18" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="60.96" x2="172.72" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="58.42" x2="172.72" y2="60.96" width="0.1524" layer="91"/>
+<junction x="172.72" y="58.42"/>
+<wire x1="172.72" y1="58.42" x2="162.56" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="+12V" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="1"/>
-<wire x1="614.68" y1="-25.4" x2="622.3" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="622.3" y1="-25.4" x2="622.3" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="66.04" x2="233.68" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="66.04" x2="233.68" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="P+11" gate="1" pin="+12V"/>
 </segment>
 </net>
@@ -16376,6 +16396,27 @@ Source: tuxgr_12x2_r2.pdf</description>
 <pinref part="IC1" gate="G$1" pin="PC4(ADC4/SDA)"/>
 <wire x1="101.6" y1="73.66" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
 <label x="104.14" y="73.66" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="AUDIO_OUT" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PB1(OC1A)"/>
+<wire x1="101.6" y1="35.56" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
+<label x="104.14" y="35.56" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="PTT" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PB5(SCK)"/>
+<wire x1="101.6" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
+<label x="104.14" y="25.4" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MIC_IN" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PB4(MISO)"/>
+<wire x1="101.6" y1="27.94" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
+<label x="104.14" y="27.94" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -17419,6 +17460,145 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="38.1" y1="38.1" x2="38.1" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="53.34" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
 <label x="25.4" y="53.34" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<description>JACKS</description>
+<plain>
+</plain>
+<instances>
+<instance part="J2" gate="G$1" x="25.4" y="48.26" rot="MR180"/>
+<instance part="J3" gate="G$1" x="25.4" y="17.78" rot="MR180"/>
+<instance part="GND36" gate="1" x="35.56" y="38.1"/>
+<instance part="GND37" gate="1" x="35.56" y="5.08"/>
+<instance part="C24" gate="G$1" x="45.72" y="53.34" rot="R270"/>
+<instance part="R26" gate="G$1" x="55.88" y="53.34" rot="R180"/>
+<instance part="R27" gate="G$1" x="76.2" y="30.48" rot="R270"/>
+<instance part="R28" gate="G$1" x="76.2" y="15.24" rot="R270"/>
+<instance part="GND38" gate="1" x="76.2" y="5.08"/>
+<instance part="R29" gate="G$1" x="58.42" y="35.56" rot="R90"/>
+<instance part="C25" gate="G$1" x="58.42" y="15.24" rot="R180"/>
+<instance part="GND39" gate="1" x="58.42" y="5.08"/>
+<instance part="C26" gate="G$1" x="63.5" y="22.86" rot="R90"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="43.18" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="43.18" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="GND36" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="12.7" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="GND37" gate="1" pin="GND"/>
+<wire x1="35.56" y1="12.7" x2="35.56" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="GND38" gate="1" pin="GND"/>
+<wire x1="76.2" y1="7.62" x2="76.2" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND39" gate="1" pin="GND"/>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="7.62" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PTT" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="15.24" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="15.24" x2="35.56" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="3"/>
+<wire x1="35.56" y1="17.78" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="15.24" x2="40.64" y2="15.24" width="0.1524" layer="91"/>
+<label x="40.64" y="15.24" size="0.8128" layer="95" xref="yes"/>
+<junction x="35.56" y="15.24"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="4"/>
+<wire x1="33.02" y1="20.32" x2="35.56" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="20.32" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="5"/>
+<wire x1="35.56" y1="22.86" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="22.86" x2="58.42" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="22.86" x2="58.42" y2="30.48" width="0.1524" layer="91"/>
+<junction x="35.56" y="22.86"/>
+<pinref part="C25" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="20.32" x2="58.42" y2="22.86" width="0.1524" layer="91"/>
+<junction x="58.42" y="22.86"/>
+<pinref part="C26" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="22.86" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="45.72" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="45.72" x2="35.56" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="3"/>
+<wire x1="35.56" y1="48.26" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="4"/>
+<wire x1="33.02" y1="50.8" x2="35.56" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="50.8" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="5"/>
+<wire x1="35.56" y1="53.34" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="48.26" x2="35.56" y2="50.8" width="0.1524" layer="91"/>
+<junction x="35.56" y="48.26"/>
+<junction x="35.56" y="50.8"/>
+<pinref part="C24" gate="G$1" pin="-"/>
+<wire x1="35.56" y1="53.34" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
+<junction x="35.56" y="53.34"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="C24" gate="G$1" pin="+"/>
+<wire x1="48.26" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R26" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="AUDIO_OUT" class="0">
+<segment>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="53.34" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
+<label x="78.74" y="53.34" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="AREF" class="0">
+<segment>
+<wire x1="78.74" y1="38.1" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="38.1" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
+<label x="78.74" y="38.1" size="0.8128" layer="95" xref="yes"/>
+<pinref part="R27" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="R27" gate="G$1" pin="2"/>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="20.32" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
+<junction x="76.2" y="22.86"/>
+<wire x1="76.2" y1="22.86" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="C26" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="22.86" x2="68.58" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+5V_A" class="0">
+<segment>
+<label x="78.74" y="45.72" size="0.8128" layer="95" xref="yes"/>
+<pinref part="R29" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="40.64" x2="58.42" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
