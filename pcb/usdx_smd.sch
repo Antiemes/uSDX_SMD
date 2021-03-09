@@ -476,12 +476,6 @@ Source: avr.lbr</description>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="VCC">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="+12V">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
@@ -522,19 +516,6 @@ Source: avr.lbr</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="+3V3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VCC" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="VCC" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -16016,12 +15997,10 @@ Source: tuxgr_12x2_r2.pdf</description>
 <part name="IC1" library="atmel" deviceset="MEGA8" device="-AI"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
-<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
-<part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603K"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="M1206" value="100"/>
-<part name="IC4" library="burr-brown" deviceset="REG1117" device=""/>
-<part name="U1" library="microbuilder" deviceset="SI5351A" device="" value="Si5351A-B-GT"/>
+<part name="IC2" library="burr-brown" deviceset="REG1117" device=""/>
+<part name="IC4" library="microbuilder" deviceset="SI5351A" device="" value="Si5351A-B-GT"/>
 <part name="J1" library="con-jack" deviceset="DCJ0303" device=""/>
 <part name="X1" library="con-coax" deviceset="?227161*" device="1-" technology="-7"/>
 <part name="Q1" library="transistor-small-signal" deviceset="BS170" device=""/>
@@ -16029,14 +16008,14 @@ Source: tuxgr_12x2_r2.pdf</description>
 <part name="X3" library="IQD-Frequency-Products" deviceset="CRYSTALS-NOGND" device="-HC49"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
-<part name="U$1" library="FST3253" deviceset="FST3253" device=""/>
+<part name="IC5" library="FST3253" deviceset="FST3253" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
-<part name="IC5" library="burr-brown" deviceset="REG1117" device=""/>
+<part name="IC3" library="burr-brown" deviceset="REG1117" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -16044,21 +16023,20 @@ Source: tuxgr_12x2_r2.pdf</description>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
-<part name="IC6" library="74xx-eu" deviceset="74*00" device="N" technology="ACT"/>
+<part name="IC7" library="74xx-eu" deviceset="74*00" device="N" technology="ACT"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0603K"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0603K" value="10n"/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
-<part name="IC2" library="linear" deviceset="TL072" device="P"/>
+<part name="IC6" library="linear" deviceset="TL072" device="P"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="M1206" value="100"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="M1206" value="100"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="M1206" value="100"/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="M1206" value="82k"/>
-<part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0603K"/>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
@@ -16118,7 +16096,6 @@ Source: tuxgr_12x2_r2.pdf</description>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="C19" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
-<part name="R22" library="rcl" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="R23" library="rcl" deviceset="R-EU_" device="M1206" value="10k"/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="R24" library="rcl" deviceset="R-EU_" device="M1206" value="10k"/>
@@ -16147,6 +16124,14 @@ Source: tuxgr_12x2_r2.pdf</description>
 <part name="C25" library="rcl" deviceset="C-EU" device="C1206K" value="10n"/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
 <part name="C26" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
+<part name="C27" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
+<part name="R22" library="rcl" deviceset="R-EU_" device="R1206" value="FB"/>
+<part name="Q4" library="transistor-small-signal" deviceset="BS170" device=""/>
+<part name="C28" library="rcl" deviceset="C-EU" device="C0603K" value="10n"/>
+<part name="GND40" library="supply1" deviceset="GND" device=""/>
+<part name="R30" library="rcl" deviceset="R-EU_" device="R1206" value="1k"/>
+<part name="C29" library="rcl" deviceset="C-EU" device="C0603K" value="10n"/>
+<part name="GND41" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16156,15 +16141,12 @@ Source: tuxgr_12x2_r2.pdf</description>
 <instances>
 <instance part="IC1" gate="G$1" x="76.2" y="58.42"/>
 <instance part="GND1" gate="1" x="43.18" y="50.8"/>
-<instance part="P+1" gate="1" x="33.02" y="55.88"/>
-<instance part="+3V1" gate="G$1" x="-10.16" y="71.12"/>
-<instance part="P+2" gate="VCC" x="10.16" y="86.36"/>
+<instance part="P+1" gate="1" x="25.4" y="55.88"/>
 <instance part="C2" gate="G$1" x="71.12" y="104.14"/>
 <instance part="X1" gate="G$1" x="160.02" y="58.42"/>
 <instance part="X3" gate="G$1" x="43.18" y="63.5" rot="R90"/>
 <instance part="GND8" gate="1" x="71.12" y="93.98"/>
 <instance part="P+5" gate="1" x="71.12" y="111.76"/>
-<instance part="P+8" gate="1" x="33.02" y="83.82"/>
 <instance part="GND10" gate="1" x="43.18" y="76.2"/>
 <instance part="C6" gate="G$1" x="76.2" y="104.14"/>
 <instance part="JP1" gate="A" x="180.34" y="60.96"/>
@@ -16173,7 +16155,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <instance part="P+11" gate="1" x="233.68" y="76.2"/>
 <instance part="GND21" gate="1" x="167.64" y="63.5"/>
 <instance part="GND22" gate="1" x="165.1" y="48.26"/>
-<instance part="R22" gate="G$1" x="129.54" y="63.5" rot="R90"/>
+<instance part="R22" gate="G$1" x="33.02" y="58.42" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -16234,8 +16216,12 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="50.8" y1="45.72" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
 <junction x="50.8" y="45.72"/>
 <wire x1="50.8" y1="45.72" x2="33.02" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="45.72" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="45.72" x2="25.4" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="45.72" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="53.34" x2="33.02" y2="45.72" width="0.1524" layer="91"/>
+<junction x="33.02" y="45.72"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -16244,12 +16230,6 @@ Source: tuxgr_12x2_r2.pdf</description>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="106.68" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
 <junction x="71.12" y="106.68"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="AVCC"/>
-<wire x1="53.34" y1="73.66" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="73.66" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="P+8" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -16299,6 +16279,11 @@ Source: tuxgr_12x2_r2.pdf</description>
 <pinref part="JP2" gate="A" pin="2"/>
 <wire x1="226.06" y1="63.5" x2="238.76" y2="63.5" width="0.1524" layer="91"/>
 <label x="238.76" y="63.5" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PB0(ICP)"/>
+<wire x1="101.6" y1="38.1" x2="104.14" y2="38.1" width="0.1524" layer="91"/>
+<label x="104.14" y="38.1" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RD" class="0">
@@ -16419,6 +16404,17 @@ Source: tuxgr_12x2_r2.pdf</description>
 <label x="104.14" y="27.94" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="AVCC"/>
+<wire x1="53.34" y1="73.66" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
+<label x="15.24" y="73.66" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="73.66" x2="15.24" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="63.5" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
+<junction x="33.02" y="73.66"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -16426,7 +16422,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <plain>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="45.72" y="38.1"/>
+<instance part="IC4" gate="G$1" x="45.72" y="38.1"/>
 <instance part="X2" gate="G$1" x="12.7" y="40.64" rot="R90"/>
 <instance part="GND2" gate="1" x="86.36" y="30.48"/>
 <instance part="+3V2" gate="G$1" x="30.48" y="66.04"/>
@@ -16436,7 +16432,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <instance part="R3" gate="G$1" x="22.86" y="48.26" rot="R90"/>
 <instance part="GND3" gate="1" x="93.98" y="30.48"/>
 <instance part="+3V4" gate="G$1" x="93.98" y="66.04"/>
-<instance part="IC5" gate="G$1" x="43.18" y="101.6"/>
+<instance part="IC3" gate="G$1" x="43.18" y="101.6"/>
 <instance part="C3" gate="G$1" x="58.42" y="96.52"/>
 <instance part="C4" gate="G$1" x="27.94" y="96.52"/>
 <instance part="GND4" gate="1" x="43.18" y="86.36"/>
@@ -16450,7 +16446,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="IC4" gate="G$1" pin="GND"/>
 <wire x1="58.42" y1="38.1" x2="86.36" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="38.1" x2="86.36" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -16461,7 +16457,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="93.98" y1="33.02" x2="93.98" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="G$1" pin="GND"/>
+<pinref part="IC3" gate="G$1" pin="GND"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -16477,14 +16473,14 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="XB"/>
+<pinref part="IC4" gate="G$1" pin="XB"/>
 <pinref part="X2" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="38.1" x2="12.7" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="XA"/>
+<pinref part="IC4" gate="G$1" pin="XA"/>
 <wire x1="33.02" y1="40.64" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="40.64" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="X2" gate="G$1" pin="2"/>
@@ -16493,7 +16489,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="VDD"/>
+<pinref part="IC4" gate="G$1" pin="VDD"/>
 <wire x1="33.02" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="43.18" x2="30.48" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
@@ -16508,7 +16504,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <junction x="30.48" y="55.88"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="VDDO"/>
+<pinref part="IC4" gate="G$1" pin="VDDO"/>
 <wire x1="58.42" y1="35.56" x2="60.96" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="35.56" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
@@ -16519,7 +16515,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="93.98" y1="63.5" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="G$1" pin="VOUT"/>
+<pinref part="IC3" gate="G$1" pin="VOUT"/>
 <wire x1="55.88" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="101.6" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
@@ -16531,28 +16527,28 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="CLK0" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="CLK0"/>
+<pinref part="IC4" gate="G$1" pin="CLK0"/>
 <wire x1="58.42" y1="43.18" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 <label x="66.04" y="43.18" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CLK1" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="CLK1"/>
+<pinref part="IC4" gate="G$1" pin="CLK1"/>
 <wire x1="58.42" y1="40.64" x2="66.04" y2="40.64" width="0.1524" layer="91"/>
 <label x="66.04" y="40.64" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CLK2" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="CLK2"/>
+<pinref part="IC4" gate="G$1" pin="CLK2"/>
 <wire x1="58.42" y1="33.02" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
 <label x="66.04" y="33.02" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="SDA"/>
+<pinref part="IC4" gate="G$1" pin="SDA"/>
 <wire x1="33.02" y1="33.02" x2="25.4" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="33.02" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
@@ -16563,7 +16559,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="SCL"/>
+<pinref part="IC4" gate="G$1" pin="SCL"/>
 <wire x1="33.02" y1="35.56" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="35.56" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
@@ -16574,7 +16570,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="IC5" gate="G$1" pin="VIN"/>
+<pinref part="IC3" gate="G$1" pin="VIN"/>
 <wire x1="30.48" y1="101.6" x2="27.94" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="101.6" x2="20.32" y2="101.6" width="0.1524" layer="91"/>
@@ -16592,29 +16588,40 @@ Source: tuxgr_12x2_r2.pdf</description>
 </plain>
 <instances>
 <instance part="Q1" gate="1" x="91.44" y="71.12" rot="MR0"/>
-<instance part="IC6" gate="A" x="30.48" y="93.98"/>
-<instance part="IC6" gate="B" x="60.96" y="93.98"/>
-<instance part="IC6" gate="C" x="81.28" y="93.98"/>
-<instance part="IC6" gate="D" x="30.48" y="76.2"/>
-<instance part="IC6" gate="P" x="27.94" y="45.72"/>
+<instance part="IC7" gate="A" x="30.48" y="93.98"/>
+<instance part="IC7" gate="B" x="60.96" y="93.98"/>
+<instance part="IC7" gate="C" x="81.28" y="93.98"/>
+<instance part="IC7" gate="D" x="124.46" y="93.98"/>
+<instance part="IC7" gate="P" x="27.94" y="45.72"/>
 <instance part="GND7" gate="1" x="27.94" y="33.02"/>
 <instance part="P+4" gate="1" x="27.94" y="58.42"/>
 <instance part="C5" gate="G$1" x="93.98" y="93.98" rot="R90"/>
-<instance part="P+6" gate="1" x="15.24" y="81.28"/>
+<instance part="P+6" gate="1" x="109.22" y="99.06"/>
 <instance part="Q2" gate="1" x="91.44" y="50.8" rot="MR0"/>
 <instance part="Q3" gate="1" x="91.44" y="30.48" rot="MR0"/>
 <instance part="R13" gate="G$1" x="101.6" y="20.32" rot="R90"/>
 <instance part="GND23" gate="1" x="101.6" y="10.16"/>
 <instance part="GND24" gate="1" x="78.74" y="10.16"/>
+<instance part="C27" gate="G$1" x="35.56" y="45.72"/>
+<instance part="Q4" gate="1" x="2.54" y="93.98" rot="MR0"/>
+<instance part="C28" gate="G$1" x="17.78" y="78.74" rot="R180"/>
+<instance part="GND40" gate="1" x="17.78" y="68.58"/>
+<instance part="R30" gate="G$1" x="0" y="78.74" rot="R90"/>
+<instance part="C29" gate="G$1" x="0" y="104.14" rot="R180"/>
+<instance part="GND41" gate="1" x="0" y="68.58"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="IC6" gate="P" pin="GND"/>
+<pinref part="IC7" gate="P" pin="GND"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="27.94" y1="35.56" x2="27.94" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="38.1" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="38.1" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
+<junction x="27.94" y="38.1"/>
 </segment>
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
@@ -16638,43 +16645,57 @@ Source: tuxgr_12x2_r2.pdf</description>
 <junction x="78.74" y="43.18"/>
 <pinref part="GND24" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C28" gate="G$1" pin="1"/>
+<pinref part="GND40" gate="1" pin="GND"/>
+<wire x1="17.78" y1="71.12" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R30" gate="G$1" pin="1"/>
+<pinref part="GND41" gate="1" pin="GND"/>
+<wire x1="0" y1="71.12" x2="0" y2="73.66" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="IC6" gate="P" pin="VCC"/>
+<pinref part="IC7" gate="P" pin="VCC"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="27.94" y1="55.88" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="48.26" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="53.34" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
+<junction x="27.94" y="53.34"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="D" pin="I1"/>
-<wire x1="22.86" y1="73.66" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="73.66" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="IC6" gate="D" pin="I0"/>
-<wire x1="20.32" y1="76.2" x2="20.32" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="78.74" x2="22.86" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="76.2" x2="15.24" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="76.2" x2="15.24" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="IC7" gate="D" pin="I1"/>
+<wire x1="116.84" y1="91.44" x2="114.3" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="91.44" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="IC7" gate="D" pin="I0"/>
+<wire x1="114.3" y1="93.98" x2="114.3" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="96.52" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="93.98" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
-<junction x="20.32" y="76.2"/>
+<junction x="114.3" y="93.98"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="IC6" gate="A" pin="O"/>
+<pinref part="IC7" gate="A" pin="O"/>
 <wire x1="38.1" y1="93.98" x2="40.64" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="93.98" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="IC6" gate="B" pin="I0"/>
+<pinref part="IC7" gate="B" pin="I0"/>
 <wire x1="40.64" y1="96.52" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="IC6" gate="B" pin="O"/>
+<pinref part="IC7" gate="B" pin="O"/>
 <wire x1="68.58" y1="93.98" x2="71.12" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="93.98" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="IC6" gate="C" pin="I0"/>
+<pinref part="IC7" gate="C" pin="I0"/>
 <wire x1="71.12" y1="96.52" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="IC6" gate="C" pin="I1"/>
+<pinref part="IC7" gate="C" pin="I1"/>
 <wire x1="73.66" y1="91.44" x2="71.12" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="91.44" x2="71.12" y2="93.98" width="0.1524" layer="91"/>
 <junction x="71.12" y="93.98"/>
@@ -16682,7 +16703,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="IC6" gate="C" pin="O"/>
+<pinref part="IC7" gate="C" pin="O"/>
 <wire x1="88.9" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 </segment>
@@ -16707,22 +16728,29 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="101.6" y1="93.98" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="TX" class="0">
 <segment>
-<pinref part="IC6" gate="A" pin="I1"/>
+<pinref part="IC7" gate="A" pin="I1"/>
 <wire x1="22.86" y1="91.44" x2="20.32" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="91.44" x2="20.32" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="IC6" gate="A" pin="I0"/>
+<pinref part="IC7" gate="A" pin="I0"/>
 <wire x1="20.32" y1="93.98" x2="20.32" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="96.52" x2="22.86" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="93.98" x2="17.78" y2="93.98" width="0.1524" layer="91"/>
 <junction x="20.32" y="93.98"/>
-<label x="17.78" y="93.98" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="Q4" gate="1" pin="G"/>
+<wire x1="7.62" y1="93.98" x2="17.78" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="93.98" x2="20.32" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="93.98" x2="17.78" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="111.76" x2="15.24" y2="111.76" width="0.1524" layer="91"/>
+<junction x="17.78" y="93.98"/>
+<label x="15.24" y="111.76" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="C28" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="83.82" x2="17.78" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CLK2" class="0">
 <segment>
-<pinref part="IC6" gate="B" pin="I1"/>
+<pinref part="IC7" gate="B" pin="I1"/>
 <wire x1="53.34" y1="91.44" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
 <label x="50.8" y="91.44" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -16745,6 +16773,32 @@ Source: tuxgr_12x2_r2.pdf</description>
 <label x="60.96" y="58.42" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="Q4" gate="1" pin="D"/>
+<pinref part="C29" gate="G$1" pin="1"/>
+<wire x1="0" y1="101.6" x2="0" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RD" class="0">
+<segment>
+<pinref part="C29" gate="G$1" pin="2"/>
+<wire x1="0" y1="109.22" x2="0" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="0" y1="111.76" x2="-10.16" y2="111.76" width="0.1524" layer="91"/>
+<label x="-10.16" y="111.76" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="RXS" class="0">
+<segment>
+<pinref part="Q4" gate="1" pin="S"/>
+<pinref part="R30" gate="G$1" pin="2"/>
+<wire x1="0" y1="83.82" x2="0" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="0" y1="86.36" x2="0" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="0" y1="86.36" x2="-10.16" y2="86.36" width="0.1524" layer="91"/>
+<junction x="0" y="86.36"/>
+<label x="-10.16" y="86.36" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -16753,22 +16807,22 @@ Source: tuxgr_12x2_r2.pdf</description>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="170.18" y="68.58"/>
-<instance part="U$1" gate="G$1" x="96.52" y="78.74" rot="MR0"/>
-<instance part="IC2" gate="A" x="187.96" y="71.12" rot="MR180"/>
-<instance part="IC2" gate="B" x="187.96" y="35.56" rot="MR180"/>
+<instance part="IC5" gate="G$1" x="96.52" y="78.74" rot="MR0"/>
+<instance part="IC6" gate="A" x="187.96" y="71.12" rot="MR180"/>
+<instance part="IC6" gate="B" x="187.96" y="35.56" rot="MR180"/>
 <instance part="R4" gate="G$1" x="170.18" y="73.66"/>
 <instance part="R5" gate="G$1" x="170.18" y="33.02"/>
 <instance part="R6" gate="G$1" x="170.18" y="38.1"/>
 <instance part="P+7" gate="1" x="96.52" y="93.98"/>
 <instance part="GND9" gate="1" x="96.52" y="35.56"/>
 <instance part="R7" gate="G$1" x="187.96" y="83.82"/>
-<instance part="C7" gate="G$1" x="132.08" y="30.48"/>
-<instance part="P+9" gate="1" x="132.08" y="40.64"/>
-<instance part="GND11" gate="1" x="132.08" y="17.78"/>
+<instance part="C7" gate="G$1" x="96.52" y="114.3"/>
+<instance part="P+9" gate="1" x="96.52" y="124.46"/>
+<instance part="GND11" gate="1" x="96.52" y="101.6"/>
 <instance part="R8" gate="G$1" x="190.5" y="48.26"/>
 <instance part="C8" gate="G$1" x="185.42" y="91.44" rot="R90"/>
 <instance part="C9" gate="G$1" x="187.96" y="55.88" rot="R90"/>
-<instance part="IC2" gate="P" x="185.42" y="111.76"/>
+<instance part="IC6" gate="P" x="185.42" y="111.76"/>
 <instance part="GND12" gate="1" x="185.42" y="99.06"/>
 <instance part="P+10" gate="1" x="185.42" y="124.46"/>
 <instance part="C10" gate="G$1" x="193.04" y="111.76"/>
@@ -16789,30 +16843,30 @@ Source: tuxgr_12x2_r2.pdf</description>
 <instance part="GND17" gate="1" x="213.36" y="53.34"/>
 <instance part="GND18" gate="1" x="213.36" y="17.78"/>
 <instance part="GND19" gate="1" x="78.74" y="35.56"/>
-<instance part="C17" gate="G$1" x="53.34" y="58.42" rot="R90"/>
+<instance part="C17" gate="G$1" x="43.18" y="81.28" rot="R90"/>
 <instance part="R14" gate="G$1" x="60.96" y="114.3" rot="R90"/>
 <instance part="R15" gate="G$1" x="60.96" y="99.06" rot="R90"/>
 <instance part="C18" gate="G$1" x="50.8" y="99.06"/>
 <instance part="GND25" gate="1" x="60.96" y="86.36"/>
 <instance part="P+12" gate="1" x="60.96" y="124.46"/>
-<instance part="R16" gate="G$1" x="71.12" y="78.74" rot="R90"/>
+<instance part="R16" gate="G$1" x="71.12" y="99.06" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="IC5" gate="G$1" pin="GND"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="96.52" y1="38.1" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="132.08" y1="25.4" x2="132.08" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="109.22" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="P" pin="V-"/>
+<pinref part="IC6" gate="P" pin="V-"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="185.42" y1="101.6" x2="185.42" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="104.14" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
@@ -16851,10 +16905,10 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="213.36" y1="58.42" x2="213.36" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="OE2/"/>
+<pinref part="IC5" gate="G$1" pin="OE2/"/>
 <wire x1="83.82" y1="50.8" x2="81.28" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="50.8" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="OE1/"/>
+<pinref part="IC5" gate="G$1" pin="OE1/"/>
 <wire x1="81.28" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="50.8" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="50.8" x2="78.74" y2="38.1" width="0.1524" layer="91"/>
@@ -16874,17 +16928,17 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
+<pinref part="IC5" gate="G$1" pin="VCC"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <wire x1="96.52" y1="91.44" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="P+9" gate="1" pin="+5V"/>
-<wire x1="132.08" y1="38.1" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="121.92" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="P" pin="V+"/>
+<pinref part="IC6" gate="P" pin="V+"/>
 <pinref part="P+10" gate="1" pin="+5V"/>
 <wire x1="185.42" y1="121.92" x2="185.42" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="119.38" x2="193.04" y2="119.38" width="0.1524" layer="91"/>
@@ -16900,14 +16954,14 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="IC2" gate="A" pin="+IN"/>
+<pinref part="IC6" gate="A" pin="+IN"/>
 <wire x1="180.34" y1="68.58" x2="175.26" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="IC2" gate="A" pin="-IN"/>
+<pinref part="IC6" gate="A" pin="-IN"/>
 <wire x1="180.34" y1="73.66" x2="177.8" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="73.66" x2="175.26" y2="73.66" width="0.1524" layer="91"/>
@@ -16923,14 +16977,14 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="IC2" gate="B" pin="+IN"/>
+<pinref part="IC6" gate="B" pin="+IN"/>
 <wire x1="180.34" y1="33.02" x2="175.26" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="IC2" gate="B" pin="-IN"/>
+<pinref part="IC6" gate="B" pin="-IN"/>
 <wire x1="180.34" y1="38.1" x2="177.8" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="R8" gate="G$1" pin="1"/>
@@ -16946,7 +17000,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="IC2" gate="A" pin="OUT"/>
+<pinref part="IC6" gate="A" pin="OUT"/>
 <wire x1="195.58" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="71.12" x2="203.2" y2="71.12" width="0.1524" layer="91"/>
@@ -16968,7 +17022,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="193.04" y1="55.88" x2="198.12" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="55.88" x2="198.12" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="B" pin="OUT"/>
+<pinref part="IC6" gate="B" pin="OUT"/>
 <wire x1="195.58" y1="35.56" x2="198.12" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="35.56" x2="203.2" y2="35.56" width="0.1524" layer="91"/>
 <junction x="198.12" y="48.26"/>
@@ -16978,7 +17032,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="2B3"/>
+<pinref part="IC5" gate="G$1" pin="2B3"/>
 <wire x1="109.22" y1="78.74" x2="149.86" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="78.74" x2="149.86" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -16990,7 +17044,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="2B2"/>
+<pinref part="IC5" gate="G$1" pin="2B2"/>
 <wire x1="109.22" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="81.28" x2="157.48" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -17006,7 +17060,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="165.1" y1="33.02" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="33.02" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="33.02" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="2B4"/>
+<pinref part="IC5" gate="G$1" pin="2B4"/>
 <wire x1="142.24" y1="76.2" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="30.48" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
@@ -17015,7 +17069,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="2B1"/>
+<pinref part="IC5" gate="G$1" pin="2B1"/>
 <wire x1="109.22" y1="83.82" x2="144.78" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="83.82" x2="144.78" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
@@ -17068,33 +17122,34 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="CLK0" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="S0"/>
+<pinref part="IC5" gate="G$1" pin="S0"/>
 <wire x1="109.22" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
 <label x="111.76" y="48.26" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CLK1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="S1"/>
+<pinref part="IC5" gate="G$1" pin="S1"/>
 <wire x1="109.22" y1="45.72" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
 <label x="111.76" y="45.72" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="1A"/>
-<wire x1="83.82" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="2"/>
 <pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="58.42" x2="58.42" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="73.66" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
-<junction x="71.12" y="58.42"/>
+<wire x1="71.12" y1="81.28" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="93.98" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="G$1" pin="2A"/>
+<wire x1="71.12" y1="81.28" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
+<junction x="71.12" y="81.28"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="RXS" class="0">
 <segment>
 <pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="58.42" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="81.28" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
+<label x="35.56" y="81.28" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -17108,7 +17163,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="50.8" y1="106.68" x2="50.8" y2="101.6" width="0.1524" layer="91"/>
 <junction x="60.96" y="106.68"/>
 <wire x1="60.96" y1="106.68" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="106.68" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="106.68" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -17376,7 +17431,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <plain>
 </plain>
 <instances>
-<instance part="IC4" gate="G$1" x="66.04" y="38.1"/>
+<instance part="IC2" gate="G$1" x="66.04" y="38.1"/>
 <instance part="J1" gate="G$1" x="17.78" y="35.56"/>
 <instance part="C20" gate="G$1" x="50.8" y="33.02"/>
 <instance part="C21" gate="G$1" x="81.28" y="33.02"/>
@@ -17394,7 +17449,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="IC4" gate="G$1" pin="GND"/>
+<pinref part="IC2" gate="G$1" pin="GND"/>
 <pinref part="GND30" gate="1" pin="GND"/>
 <wire x1="66.04" y1="22.86" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
 </segment>
@@ -17431,7 +17486,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="IC4" gate="G$1" pin="VOUT"/>
+<pinref part="IC2" gate="G$1" pin="VOUT"/>
 <wire x1="78.74" y1="38.1" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="C21" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="35.56" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
@@ -17446,7 +17501,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="IC4" gate="G$1" pin="VIN"/>
+<pinref part="IC2" gate="G$1" pin="VIN"/>
 <wire x1="53.34" y1="38.1" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="C20" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="35.56" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
